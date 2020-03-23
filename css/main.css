@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+}
+
+
+/* Por padrão o tamanho da fonte é 16px */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-style: normal;
+}
+/*
+https://tableless.com.br/unidade-pixels-em-rem/
+font-size com rem:
+target ÷ context = result
+
+
+Quando utilizamos o rem o context é o body e o target é o elemento que desejamos alterar
+o tamanho da fonte
+*/
+
+a {
+    text-decoration: none ;
+}
+
+.header {
+    display: flex; /*Alinhar os itens lado lado ou em pilha depende do flex direction */
+    flex-direction: row;
+    justify-content: space-between; /* distanciamento entre os itens no caso do 
+                                    space-between ira inserir o mesmo espaco entre eles, ou seja ficarao nas extremidades;  
+                                    space-around, colocaria o espaco antes e apos eles
+                                    */
+    align-items: center;            /* Centraliza verticalmente os itens */
+    flex-wrap: wrap;                /* Quando nao houver mais espaco entre eles devido ao tamanho de tela ira quebrar linha */
+    
+    
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: #1d1e20;
+}
+
+.header a {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    margin-left: 5px;
+}
+
+.menu li a {
+    padding: 10px;
+}
+
+.flex1 {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex1 .item {
+    display: flex;
+    flex: 1 1 380px;
+    margin: 10px;
+}
+
+.flex1 img {
+    max-width: 100%;
+}
